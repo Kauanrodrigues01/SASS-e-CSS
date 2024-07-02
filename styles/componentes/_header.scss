@@ -27,8 +27,11 @@ header {
             a {
                 text-decoration: none;
                 font-weight: 500;
-                color: variaveis.$roxo-escuro;
-                font-family: variaveis.$ft-textos;
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 22px, variaveis.$roxo-escuro);
+                &:hover{
+                    color: variaveis.$roxo-escuro;
+                    font-weight: 700;
+                }
             }
         }
     }
@@ -43,9 +46,7 @@ header {
         .textos-home{
             max-width: 464px;
             h1{
-                font-size: 42px;
-                font-family: variaveis.$ft-titulos;
-                color: variaveis.$roxo-escuro;
+                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 42px, variaveis.$roxo-escuro);
                 margin-bottom: 2rem;
                 span{
                     color: variaveis.$roxo-vibrante;
@@ -63,6 +64,10 @@ header {
                 font-weight: 500;
                 padding: 1em 2em;
                 font-size: 22px;
+                cursor: pointer;
+                &:hover{
+                    background-color: variaveis.$roxo-calmante;
+                }
             }
         }
         .img-home{
