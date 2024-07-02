@@ -1,5 +1,8 @@
 @use './abstract/root';
-@use './componentes/header';
-@use './componentes/nosso-espaco';
-@use './componentes/servicos';
-@use './componentes/desconto';
+
+@use './components/header';
+@use './components/nosso-espaco';
+@use './components/servicos';
+@use './components/desconto';
+@use './components/contatos';
+@use './components/_footer.sass';
