@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  padding: 2rem;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+header nav .linha {
+  border-top: 1px solid #000000;
+  width: 80%;
+}
+header nav ul {
+  display: inline-flex;
+  gap: 2rem;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #0C0421;
+  font-family: "Montserrat", sans-serif;
+}
+header #home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1040px;
+}
+header #home .textos-home {
+  max-width: 464px;
+}
+header #home .textos-home h1 {
+  font-size: 42px;
+  font-family: "Krona One", sans-serif;
+  color: #0C0421;
+  margin-bottom: 2rem;
+}
+header #home .textos-home h1 span {
+  color: #4e75ff;
+  display: block;
+}
+header #home .textos-home .btn-main {
+  max-width: 280px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: #4e75ff;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding: 1em 2em;
+  font-size: 22px;
+}
+header #home .img-home {
+  max-width: 474px;
+}
+header #home .img-home img {
+  width: 100%;
+}
+
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
+}/*# sourceMappingURL=styles.css.map */
