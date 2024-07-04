@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 @mixin margem-central($width){
     margin: 0 auto;
     width: $width;
@@ -7,3 +9,14 @@
     font-size: $f-size;
     color: $f-color;
 }
+
+// scss/abstract/_mixins.scss
+@mixin media($breakpoint) {
+    @if $breakpoint == small {
+      @media (max-width: 360px) { @content; }
+    } @else if $breakpoint == medium {
+      @media (max-width: 768px) { @content; }
+    } @else if $breakpoint == large {
+      @media (max-width: 1440px) { @content; }
+    }
+  }

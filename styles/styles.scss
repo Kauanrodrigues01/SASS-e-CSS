@@ -1,4 +1,6 @@
 @use './abstract/root';
+@use 'abstract/mixins';
+@use 'abstract/variaveis';
 
 @use './components/header';
 @use './components/nosso-espaco';
